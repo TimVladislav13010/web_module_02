@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "bot-assistant"
+version = "1.0.0"
+description = "Бот асистент працює з книгою контактів, сортує файли, веде нотатки."
+authors = ["Vladislav <109065019+TimVladislav13010@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "bot_assistant"}]
+classifiers = [
+    "Scripts :: bot-assistant",
+    "Programming Language :: Python :: 3",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+colorama = "0.4.6"
+appdirs = "1.4.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+bot-assistant = "bot_assistant.main:main"
